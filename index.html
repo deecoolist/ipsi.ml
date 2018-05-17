@@ -11,7 +11,11 @@
         // $("#rss-feeds").rss("https://feeds.feedburner.com/partai-psi?format=xml")
         $("#rss-feeds").rss("https://psi.id/feed/", {
           limit: 30,
-          ssl: true
+          ssl: true,
+          dateFormat: 'dd MMMM YYYY',
+          dateLocale: 'id',
+          dateFormatFunction: function(date){},
+          effect: 'slideFastSynced'
         })
       })
     </script>
