@@ -12,6 +12,8 @@
         $("#rss-feeds").rss("https://psi.id/feed/", {
           limit: 30,
           ssl: true,
+          layoutTemplate: "<div class='feed-container'>{entries}</div>",
+          entryTemplate: '<p>{title}</p>',
           dateFormat: 'do MMMM YYYY',
           dateLocale: 'id'
         })
