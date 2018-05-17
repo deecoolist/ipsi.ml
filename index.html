@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PSI &mdash; FYI</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/jquery.rss.js"></script>
+    <script>
+      jQuery(function($) {
+        $("#rss-feeds").rss("https://psi.id/feed/")
+      })
+    </script>
+  </head>
+  <body>
+    <div id="rss-feeds"></div>
+  </body>
+</html>
