@@ -9,7 +9,9 @@
     <script>
       jQuery(function($) {
         // $("#rss-feeds").rss("https://feeds.feedburner.com/partai-psi?format=xml")
-        $("#rss-feeds").rss("https://psi.id/feed/")
+        $("#rss-feeds").rss("https://psi.id/feed/", {
+          ssl: true
+        })
       })
     </script>
   </head>
